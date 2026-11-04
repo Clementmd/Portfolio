@@ -3,120 +3,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-brand">
-            <span>Portfolio Michaud Clément</span>
+            <span>Clément Michaud</span>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a href="qui-suis-je.html">Qui suis-je</a></li>
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="page-section-indicator">
-        <div class="section-active">Présentation</div>
-    </div>
+    <section id="accueil" class="hero">
+        <div class="hero-content reveal-up">
+            <div class="eyebrow">Développeur web • Étudiant en informatique • 3e année</div>
+            <h1>Clément <span>Michaud</span></h1>
+            <p>Étudiant en informatique en 3e année de BUT, passionné par le développement web et les applications.</p>
+            <p>Je travaille sur des projets concrets mêlant front, back, bases de données et ergonomie.</p>
+            <p>Vous trouverez ici mes compétences, mes réalisations et mon parcours.</p>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="profile-section">
-                <div class="profile-photo" style="background-image: url('images/moi.png')"></div>
-                <div class="profile-info">
-                    <h1>Présentation</h1>
-                    <p>Bonjour, je m’appelle Michaud Clément née le 22 décembre 2006 je suis étudiant</p>
-                    <p> 2e année en informatique dans le BUT informatique de Grenoble. </p> 
-                    <p>Vous trouverez sur mon portfolio tout un tas d’informations sur moi,</p> 
-                    <p>sur ce que j’ai appris et les projets que j’ai réalisé.</p>
+            <div class="hero-actions">
+                <a href="#projets" class="primary-btn">Voir mes projets</a>
+                <a href="#a-propos" class="secondary-btn">En savoir plus</a>
+                <a href="CV Clément Michaud Stage Grenoble.pdf" class="cv-btn" download="CV-Clement-Michaud.pdf" rel="noreferrer">Voir mon CV</a>
+            </div>
+
+            <ul class="hero-stats">
+                <li>
+                    <strong>3e</strong>
+                    <span>année BUT</span>
+                </li>
+                <li>
+                    <strong>6</strong>
+                    <span>projets</span>
+                </li>
+                <li>
+                    <strong>12+</strong>
+                    <span>technologies</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero-visual reveal-up delay-1">
+            <div class="glass-card tech-panel">
+                <div class="monogram">CM</div>
+                <div class="system-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="code-window">
+                    <div class="line"><span class="token tag">const</span> profil = {</div>
+                    <div class="line indent">role: <span class="token string">"Développeur"</span>,</div>
+                    <div class="line indent">niveau: <span class="token string">"3e année BUT"</span>,</div>
+                    <div class="line indent">stack: <span class="token string">["Web", "Java", "Python"]</span></div>
+                    <div class="line">};</div>
+                </div>
+                <div class="profile-badges">
+                    <span>Web</span>
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>React</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills-section">
-        <h2>Langages au cours de mes années </h2>
+    <section id="competences" class="skills-section">
+        <div class="skills-header">
+            <p class="section-kicker">Stack technique</p>
+            <h2>Technologies que je maîtrise</h2>
+        </div>
         <div class="skills-container">
             <div class="skills-category">
-                <h3>Langages Maîtrisés</h3>
+                <h3>Frontend & interfaces</h3>
                 <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="images/JavaScript-Emblem.png" alt="JavaScript">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/python-logo.png" alt="Python">
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/postgresql.png" alt="PostgreSQL">
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/hmtl.png" alt="Html/css">
-                        <span>Html/css</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/javafx.png" alt="JavaFx">
-                        <span>JavaFx</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/visual_paradigm.png" alt="Visual Paradigm">
-                        <span>Visual Paradigm</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/drawio-icon-512x506-aysi61g6.png" alt="Draw io">
-                        <span>Draw io</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/php.png" alt="Draw io">
-                        <span>PHP</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/symfony.png" alt="Draw io">
-                        <span>Symfony</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/laravel.png" alt="Draw io">
-                        <span>Laravel</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/android_studio.png" alt="Draw io">
-                        <span>Android Studio</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/Blade.png" alt="Draw io">
-                        <span>Blade</span>
-                    </div>
+                    <a class="skill-item" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-meta">Interactivité</span>
+                    </a>
+                    <a class="skill-item" href="https://fr.react.dev/" target="_blank" rel="noreferrer">
+                        <span class="skill-name">React</span>
+                        <span class="skill-meta">Interfaces</span>
+                    </a>
+                    <a class="skill-item" href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noreferrer">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-meta">Structure</span>
+                    </a>
+                    <a class="skill-item" href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" rel="noreferrer">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-meta">Design</span>
+                    </a>
+                    <a class="skill-item" href="https://laravel.com/docs/11.x/blade" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Blade</span>
+                        <span class="skill-meta">Templates</span>
+                    </a>
                 </div>
             </div>
 
             <div class="skills-category">
-                <h3>En Apprentissage</h3>
+                <h3>Backend & données</h3>
                 <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="images/react.png" alt="Draw io">
-                        <span>React</span>
+                    <a class="skill-item" href="https://docs.python.org/3/" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-meta">Logique</span>
+                    </a>
+                    <a class="skill-item" href="https://www.php.net/docs.php" target="_blank" rel="noreferrer">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-meta">Serveur</span>
+                    </a>
+                    <a class="skill-item" href="https://symfony.com/doc/current/index.html" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Symfony</span>
+                        <span class="skill-meta">Architecture</span>
+                    </a>
+                    <a class="skill-item" href="https://laravel.com/docs" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Laravel</span>
+                        <span class="skill-meta">Applications</span>
+                    </a>
+                    <a class="skill-item" href="https://www.postgresql.org/docs/" target="_blank" rel="noreferrer">
+                        <span class="skill-name">PostgreSQL</span>
+                        <span class="skill-meta">Données</span>
+                    </a>
+                    <a class="skill-item" href="https://openjfx.io/openjfx-docs/" target="_blank" rel="noreferrer">
+                        <span class="skill-name">JavaFX</span>
+                        <span class="skill-meta">Desktop</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Outils, modélisation & mobile</h3>
+                <div class="skills-grid">
+                    <a class="skill-item" href="https://www.visual-paradigm.com/guide/" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Visual Paradigm</span>
+                        <span class="skill-meta">Modélisation</span>
+                    </a>
+                    <a class="skill-item" href="https://www.diagrams.net/doc/" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Draw.io</span>
+                        <span class="skill-meta">Diagrammes</span>
+                    </a>
+                    <a class="skill-item" href="https://developer.android.com/studio?hl=fr" target="_blank" rel="noreferrer">
+                        <span class="skill-name">Android Studio</span>
+                        <span class="skill-meta">Mobile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="projects-section">
+        <h2>Projets concrets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Stage : Back-Offices pour Kalam conseil et QJMOTOR</h3>
+                    <p>Développement de solutions de gestion de ressources pour Kalam Conseil et QJMOTOR.</p>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>Blade</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="projet-stage.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Maintenance Multiplateforme</h3>
+                    <p>Optimisation et maintenance corrective d’une application de recherche de stage sur web et mobile.</p>
+                    <div class="project-tech">
+                        <span>Symfony</span>
+                        <span>Android Studio</span>
+                    </div>
+                    <a href="projet-maintenance.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Site Web : Aide aux Seniors</h3>
+                    <p>Plateforme collaborative avec agenda, messagerie et chatbot intégré.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                    <a href="projet-senior.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Application de gestion de Tournois</h3>
+                    <p>Application Java/JavaFX pour gérer des tournois de jeux efficacement.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                    </div>
+                    <a href="projet-tournoi.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Site Web : Découverte Entreprise</h3>
+                    <p>Site institutionnel vulgarisé pour aider les élèves dans leur recherche de stage.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="projet-vulgarisation.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Application Auto-évaluation (Primaire)</h3>
+                    <p>Application éducative pour permettre aux élèves de s’exercer et de s’auto-évaluer.</p>
+                    <div class="project-tech">
+                        <span>Android Studio</span>
+                    </div>
+                    <a href="projet-ecole.html" class="project-link">Voir le détail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos" class="about-me-section">
+        <h2>À propos</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <p><strong>Profil :</strong> Étudiant en informatique, orienté développement web et applications.</p>
+                <p><strong>Études :</strong> 3e année de BUT Informatique à Grenoble.</p>
+                <p><strong>Projet professionnel :</strong> Développer des solutions web et applicatives utiles, élégantes et performantes.</p>
+            </div>
+        </div>
+
+        <div class="interests-section">
+            <h2>Centres d'intérêt</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <div class="interest-icon">🎮</div>
+                    <h3>Jeux vidéos</h3>
+                    <p>Passioné de jeux vidéos depuis enfant</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🎵</div>
+                    <h3>Musique</h3>
+                    <p>Amateur de musique</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🏃</div>
+                    <h3>Sport</h3>
+                    <p>Passionné de sport depuis mon enfance j'ai touché quasiment à tous les sports</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🍳</div>
+                    <h3>Cuisine</h3>
+                    <p>Passionné de cuisine</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="parcours-section">
+            <h2>Mon Parcours Scolaire</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026-2027</div>
+                    <div class="timeline-content">
+                        <h3>BUT Informatique</h3>
+                        <p>3e année de BUT informatique à Grenoble</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025-2026</div>
+                    <div class="timeline-content">
+                        <h3>BUT Informatique</h3>
+                        <p>2e année de BUT informatique à Grenoble</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024-2025</div>
+                    <div class="timeline-content">
+                        <h3>BUT Informatique</h3>
+                        <p>1ère année de BUT informatique à Grenoble</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021-2024</div>
+                    <div class="timeline-content">
+                        <h3>Bac Général</h3>
+                        <p>Formation générale avec spécialités NSI, Maths et SES.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parcours-section">
+            <h2>Mon Parcours Professionnel</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">Avril - Juin 2026</div>
+                    <div class="timeline-content">
+                        <h3>Stage : Développeur Web</h3>
+                        <p><strong>Entreprise de conseil et d’ingénierie</strong></p>
+                        <p>Développeur web front et back-end : mise en place d'un back-office pour une entreprise du secteur automobile et d'un outil de gestion des données en Laravel.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Eté 2022 - 2026</div>
+                    <div class="timeline-content">
+                        <h3>Equipier</h3>
+                        <p>Equipier polyvalent en restauration rapide</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>Éducateur sportif</h3>
+                        <p>Apprentissage et perfectionnement du padel pour enfants (6-13 ans).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Babysitting</h3>
+                        <p>Garde d'enfants de 6 à 10 ans.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section class="competences-section" id="competences-secondaire">
+        <h2>Mes Compétences</h2>
+        <div class="competences-grid">
+            <div class="competence-item">
+                <div class="competence-icon">WEB</div>
+                <h3>Web</h3>
+                <p>HTML, CSS, Laravel, Symfony, JavaScript, PHP, Blade</p>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">DB</div>
+                <h3>Base de données</h3>
+                <p>PostgreSQL</p>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">GIT</div>
+                <h3>Git</h3>
+                <p>GitHub, GitLab</p>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">DEV</div>
+                <h3>Développement</h3>
+                <p>Java, Python</p>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">ORG</div>
+                <h3>Organisation</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">AUTO</div>
+                <h3>Autonome</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">PAT</div>
+                <h3>Patient</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">EFF</div>
+                <h3>Efficace</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">REA</div>
+                <h3>Réactif</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">DYN</div>
+                <h3>Dynamique</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">TEAM</div>
+                <h3>Travail d'équipe</h3>
+            </div>
+            <div class="competence-item">
+                <div class="competence-icon">SOC</div>
+                <h3>Sociable</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
         <div class="footer-content">
             <div class="contact-info">
-                <a href="tel:+33123456789" class="contact-link">
-                    <i class="fas fa-phone"></i>
-                    <span>+33 6 10 57 96 57</span>
-                </a>
-                <a href="mailto:contact@example.com" class="contact-link">
+                <a href="mailto:clement.michaud2006@gmail.com" class="contact-link" title="Cliquer pour copier l'e-mail">
                     <i class="fas fa-envelope"></i>
-                    <span>clement.michaud@etu.univ-grenoble-alpes.fr</span>
+                    <span>clement.michaud2006@gmail.com</span>
                 </a>
             </div>
             <div class="social-links">
@@ -129,5 +414,160 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            const revealItems = document.querySelectorAll('.reveal-up, .skills-category, .project-card, .interest-item, .timeline-item, .competence-item');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+
+            revealItems.forEach((item, index) => {
+                if (!reduceMotion) {
+                    item.style.transitionDelay = `${index * 80}ms`;
+                }
+                revealObserver.observe(item);
+            });
+
+            const heroVisual = document.querySelector('.tech-panel');
+            if (heroVisual && !reduceMotion) {
+                heroVisual.addEventListener('pointermove', (event) => {
+                    const rect = heroVisual.getBoundingClientRect();
+                    const x = (event.clientX - rect.left) / rect.width;
+                    const y = (event.clientY - rect.top) / rect.height;
+                    const rotateY = (x - 0.5) * 16;
+                    const rotateX = (0.5 - y) * 16;
+                    heroVisual.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+                });
+
+                heroVisual.addEventListener('pointerleave', () => {
+                    heroVisual.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+                });
+            }
+
+            const mailLink = document.querySelector('.contact-link');
+            if (mailLink) {
+                const mailText = mailLink.querySelector('span');
+                const originalText = mailText ? mailText.textContent.trim() : 'clement.michaud2006@gmail.com';
+
+                mailLink.addEventListener('click', async (event) => {
+                    event.preventDefault();
+                    const email = originalText;
+
+                    try {
+                        if (navigator.clipboard && window.isSecureContext) {
+                            await navigator.clipboard.writeText(email);
+                        } else {
+                            const tempInput = document.createElement('textarea');
+                            tempInput.value = email;
+                            tempInput.setAttribute('readonly', '');
+                            tempInput.style.position = 'fixed';
+                            tempInput.style.opacity = '0';
+                            document.body.appendChild(tempInput);
+                            tempInput.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(tempInput);
+                        }
+
+                        if (mailText) {
+                            mailText.textContent = 'E-mail copié !';
+                            mailLink.classList.add('copied');
+                            setTimeout(() => {
+                                mailText.textContent = originalText;
+                                mailLink.classList.remove('copied');
+                            }, 1500);
+                        }
+                    } catch (error) {
+                        window.location.href = `mailto:${email}`;
+                    }
+                });
+            }
+
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const sections = [...document.querySelectorAll('section[id], footer[id]')];
+            const sectionTitles = {
+                accueil: 'Accueil',
+                competences: 'Compétences',
+                projets: 'Projets',
+                'a-propos': 'À propos',
+                contact: 'Contact'
+            };
+
+            const updateDocumentTitle = (id) => {
+                const label = sectionTitles[id] || 'Portfolio';
+                document.title = label;
+            };
+
+            const setActiveLink = () => {
+                const scrollPosition = window.scrollY + 180;
+                let activeId = 'accueil';
+
+                sections.forEach((section) => {
+                    if (section.offsetTop <= scrollPosition) {
+                        activeId = section.id;
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    const isActive = link.getAttribute('href') === `#${activeId}`;
+                    link.classList.toggle('active', isActive);
+                });
+
+                updateDocumentTitle(activeId);
+            };
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    const targetId = link.getAttribute('href')?.replace('#', '');
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+                    }
+
+                    history.replaceState(null, '', window.location.pathname);
+                    setActiveLink();
+                });
+            });
+
+            window.addEventListener('scroll', setActiveLink, { passive: true });
+            setActiveLink();
+
+            const statNumbers = document.querySelectorAll('.hero-stats strong');
+            statNumbers.forEach((stat) => {
+                const value = stat.textContent.trim();
+                const numericValue = parseInt(value, 10);
+                if (Number.isNaN(numericValue)) return;
+
+                const suffix = value.includes('+') ? '+' : (value.includes('%') ? '%' : '');
+                let current = 0;
+                const duration = 1100;
+                const start = performance.now();
+
+                const tick = (now) => {
+                    const progress = Math.min((now - start) / duration, 1);
+                    current = Math.round(progress * numericValue);
+                    stat.textContent = `${current}${suffix}`;
+                    if (progress < 1) requestAnimationFrame(tick);
+                };
+
+                if (!reduceMotion) {
+                    requestAnimationFrame(tick);
+                } else {
+                    stat.textContent = value;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
